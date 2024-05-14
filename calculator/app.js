@@ -8,8 +8,10 @@ function clearDisplay() {
     display.value = "";
 }
 
+
 function calculate() {
     try {
+        // Dont use eval in production...
         display.value = eval(display.value);
 
     } catch (error) {
