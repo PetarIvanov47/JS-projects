@@ -76,6 +76,12 @@ body{
     gap: 1em;
 }
 
+.weatherImg {
+    width: 60%;
+    display: block;
+    height: 100%;
+}
+
 h1{
     font-size: 4em;
     font-weight: 500;
@@ -85,6 +91,11 @@ h2{
     font-size: 2.5em;
     font-weight: 400;
     margin-top: -0.7em;
+}
+
+.description{
+    font-size: 1.5em;
+    margin-top: -10px;
 }
 
 .details{
