@@ -27,6 +27,7 @@ searchButtonElement.addEventListener('click', async (event) => {
 
 async function getWeatherData(city) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
@@ -38,7 +39,7 @@ async function getWeatherData(city) {
 }
 
 function displayWeatherInfo(data) {
-
+    
     const { name: city,
         main: { temp, humidity },
         weather: [{ description, id }],
