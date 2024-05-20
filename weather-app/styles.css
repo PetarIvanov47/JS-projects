@@ -1,25 +1,25 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 16px;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222;
-    background-image: url("images/clouds-background.jpg");
+    /* background-color: #222222; */
+    /* background-image: url("images/backgrounds/clear-sky.jpg"); */
+    background: linear-gradient(135deg, #00feba, #5b548a);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -38,7 +38,7 @@ body::before {
 }
 
 
-.card{
+.card {
     width: 90%;
     max-width: 470px;
     /* border: 2px solid white; */
@@ -67,7 +67,7 @@ body::before {
 }
 
 
-.search{
+.search {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -76,7 +76,7 @@ body::before {
     margin-bottom: 1em;
 }
 
-.search input{
+.search input {
     outline: none;
     flex: 1;
     border: none;
@@ -87,7 +87,7 @@ body::before {
     height: 60px;
 }
 
-.search button{
+.search button {
     border: none;
     outline: none;
     background-color: #ebfffc;
@@ -98,15 +98,15 @@ body::before {
     align-items: center;
 }
 
-.search button:hover{
+.search button:hover {
     background-color: hsla(172, 35%, 87%, 0.9);
 }
 
-.search button img{
+.search button img {
     width: 20px;
 }
 
-.weather{
+.weather {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -118,23 +118,23 @@ body::before {
     width: 60%;
 }
 
-h1{
+h1 {
     font-size: 4em;
     font-weight: 500;
 }
 
-h2{
+h2 {
     font-size: 2.5em;
     font-weight: 400;
     margin-top: -0.7em;
 }
 
-.description{
+.description {
     font-size: 1.5em;
     margin-top: -10px;
 }
 
-.details{
+.details {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -142,28 +142,26 @@ h2{
     color: hsla(0, 0%, 100%, 0.8);
 }
 
-.details .collumn{
+.details .collumn {
     display: flex;
     gap: 0.8em;
     text-align: left;
     font-weight: 400;
 }
 
-.collumn img{
+.collumn img {
     height: 50px;
 }
 
-.wind, .humidity{
+.wind,
+.humidity {
     font-size: 1.2em;
     padding-bottom: 5px;
 }
 
-.errorMessage{
+.errorMessage {
     justify-content: center;
     margin-top: 1em;
     font-size: 2em;
     display: none;
 }
-
-
-
