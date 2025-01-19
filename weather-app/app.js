@@ -3,7 +3,8 @@ const inputElement = document.querySelector('input[type=text]');
 const weatherElement = document.querySelector('.weather');
 const errorContainerElement = document.querySelector('.errorMessage')
 const searchButtonElement = document.querySelector('.search button');
-const cardElement = document.querySelector('.card')
+const cardElement = document.querySelector('.card');
+
 
 searchButtonElement.addEventListener('click', async (event) => {
     const cityName = inputElement.value;
